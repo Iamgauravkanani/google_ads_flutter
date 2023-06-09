@@ -90,14 +90,14 @@ class _AdsScreenState extends State<AdsScreen> {
                 },
                 child: const Text("Show AppOpenAds")),
 
-            // SizedBox(
-            //   height: 300,
-            //   child: AdsHelper.adsHelper.nativeAd == null
-            //       ? const CircularProgressIndicator()
-            //       : AdWidget(
-            //           ad: AdsHelper.adsHelper.nativeAd!,
-            //         ),
-            // ),
+            SizedBox(
+              height: 300,
+              child: AdsHelper.adsHelper.nativeAd == null
+                  ? const CircularProgressIndicator()
+                  : AdWidget(
+                      ad: AdsHelper.adsHelper.nativeAd!,
+                    ),
+            ),
           ],
         ),
       ),
